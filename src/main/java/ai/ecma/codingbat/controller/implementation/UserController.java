@@ -40,7 +40,7 @@ public class UserController {
         return userService.getUsersWithRole(roleId);
     }
 
-    @GetMapping("/user-me")
+    @PutMapping("/user-me")
     public ApiResult<RoleDTO> userMe(@RequestBody UserMe userMe) {
         return userService.userMe(userMe);
     }
