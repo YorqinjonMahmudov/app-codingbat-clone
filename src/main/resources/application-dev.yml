@@ -5,13 +5,13 @@ server:
       timeout: 10m
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/codingbat
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
-    password: 1223
+    password: cyberhack25
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     show-sql: true
     properties:
       hibernate:
@@ -38,10 +38,10 @@ spring:
 
 jwt:
   access:
-    key: tHaX54Hwk^YMzKd@e@p7#70OZn0#D98BK8C1%T&hBnrzgqK28o
-    expiration-time: 72000000
+    key: tHaX54Hwk^YMzKd@e@p7#70@!@*6d7676K8C1%T&hBnrzgqK28o
+    expiration-time: 7200
   refresh:
-    key: tHaX54Hwk^YdfdsMzK-d@e@&p7#%70OZ()BK8C1%T&hBnrzgqK287
+    key: tHaX54Hwk^Ydfd()(+__$$%#%70OZ()BK8C1%T&hBnrzgqK287
     expiration-time: 604800000
 logging:
   file:
