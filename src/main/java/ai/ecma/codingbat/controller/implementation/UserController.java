@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.UUID;
 
@@ -40,8 +41,8 @@ public class UserController {
         return userService.getUsersWithRole(roleId);
     }
 
-    @PutMapping("/user-me")
-    public ApiResult<RoleDTO> userMe(@RequestBody UserMe userMe) {
+    @PostMapping("/user-me")
+    public ApiResult<RoleDTO> userMe(@Valid @RequestBody UserMe userMe) {
         return userService.userMe(userMe);
     }
 
