@@ -1,6 +1,6 @@
-POST localhost:8090/api/language/add
+POST localhost:800/api/language/add
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQuY29tIiwiaWF0IjoxNjYzODE2OTM4LCJleHAiOjE2NjM4ODg5Mzh9.n2xOGnDXT-ju1XRsqp1J_Ir5QY5mHulE1zj2NdC3T8_qS5i3OEIFkMHhYD2KB7Ed5SBarnu1Su6xJI3T8k4dNw
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQuY29tIiwiaWF0IjoxNjY1MzEyNjYzLCJleHAiOjE2NjUzMTMzODN9.shFt1UZMZmcsg26Crh_Zweuhd3gfEsQjJC37NleaHNDOfAhY9umwzVF9PtSD1Um8bP6Zo_ZRFOsrtN-da1PLEw
 #Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQyLmNvbSIsImlhdCI6MTY2MzEzNzMwNCwiZXhwIjoxNjYzMjA5MzA0fQ.BCJrvM0DSbh5e-tZv7ES1gFowby4rE74PfUo6psDibMV_-AnHH4g9sfey3-7G00Lidi5RESzSEl04LBHkUP4vg
 
 {
@@ -26,7 +26,7 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQuY29tI
 }
 
 ###
-POST localhost:8090/api/auth/sign-in
+POST localhost:800/api/auth/sign-in
 Content-Type: application/json
 
 {

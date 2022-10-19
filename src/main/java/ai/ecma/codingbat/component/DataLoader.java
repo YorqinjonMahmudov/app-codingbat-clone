@@ -1,20 +1,17 @@
 package ai.ecma.codingbat.component;
 
 import ai.ecma.codingbat.entity.Role;
-import ai.ecma.codingbat.entity.enums.PermissionEnum;
-import ai.ecma.codingbat.repository.RoleRepository;
-import lombok.RequiredArgsConstructor;
 import ai.ecma.codingbat.entity.User;
+import ai.ecma.codingbat.entity.enums.PermissionEnum;
 import ai.ecma.codingbat.entity.enums.RoleEnum;
+import ai.ecma.codingbat.repository.RoleRepository;
 import ai.ecma.codingbat.repository.UserRepository;
-import net.bytebuddy.asm.Advice;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
@@ -38,6 +35,7 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         if (Objects.equals(ddlMode, "create")) {
+
 
             Role role = new Role();
             role.setName(RoleEnum.ROLE_ADMIN.name());
